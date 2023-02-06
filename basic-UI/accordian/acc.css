@@ -1,0 +1,21 @@
+body{
+  background-color: antiquewhite;
+  margin: 10% 10% 0px 10%;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  padding: 10px 50px 10px 50px;
+  text-align: left;
+}
+
+
+.disc{
+  overflow: hidden;
+  display: none;
+  padding: 0px 10px 0px 10px;
+}
