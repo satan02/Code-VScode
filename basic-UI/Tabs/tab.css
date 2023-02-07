@@ -1,0 +1,38 @@
+body{
+  border: 1px rgb(255, 255, 255) solid ;
+  background-color: black;
+  padding: 50px;
+}
+
+.container{
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px rgb(255, 255, 255) solid ;
+  padding: 10px;
+  overflow: hidden;
+}
+
+button{
+  width: 100px ;
+  height: 50px;
+  color: black;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  transition: 0.4s;
+}
+button:hover{
+  background-color: cadetblue;
+}
+.container button.active{
+  background-color: blueviolet;
+}
+
+
+.block{
+  color: aliceblue;
+  border: 1px rgb(255, 255, 255) solid ;
+  padding: 20px;
+  display: none;
+  
+}
