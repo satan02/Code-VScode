@@ -84,7 +84,7 @@ color: #19A0F7;
 }
 @media(max-width:500px){
   img{
-    width: 80px;
+    width: 50px;
   }
 }
 @media(max-width:800px){
@@ -103,23 +103,39 @@ color: #19A0F7;
     align-items: center;
     text-align: center;
   }
-  #section2, .btn, .input{
-    padding: auto;
-    margin: auto;
+  #section2{
+    width: 70%;
+    margin: 0px;
   }
   img{
-    width: 100px;
+    width: 80px;
+  }
+  .title{
+    font-size: medium;
   }
 }
 @media(max-width:1000px){
   img{
-    width: 150px;
+    width: 120px;
   }
   .block{
     margin: 0px;
     padding: 0px;
   }
+  .signinlink{
+    display:none;
+  }
 }
 
+@media(max-width:1000px){
+  #section2, .btn, .input{
+    padding: auto;
+    margin: auto;
+  }
+}
 
-
+@media(max-width:1400px){
+  #section2{
+    width: 70%;
+  }
+}
