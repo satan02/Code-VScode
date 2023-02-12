@@ -1,0 +1,28 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.discription{
+  background-color: aquamarine;
+  width: 100%;
+  height: 400px;
+}
+
+.paragraph{
+  display: none;
+}
+
+
+.container{
+  display: grid;
+  gap: 20px;
+  padding: 10px 50px 10px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: grey;
+}
+
+.block{
+  
+}
