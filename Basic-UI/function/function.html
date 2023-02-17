@@ -9,13 +9,38 @@
   <script>
     function change() {
       doccument.getElementById('para').innerHTML = "paragraph changed"
-    }
+    };
+
+    // document.getElementById("cityname").style.display="block";
+    let a = 10; b = 20; c = a + b;
+
   </script>
 </head>
 
 <body>
   <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, modi!</p>
   <button onclick="change()">click to change paragraph</button>
-</body>
+
+  <button type="button" onclick="document.write(5 + 6)">Try it</button>
+  <script>
+    // window.alert("hello");
+    // alert("not hello");
+    document.write(100 + 34);
+    document.write("<br>");
+
+    console.log(5 + 15);
+    document.write(c);
+  </script>
+  </head>
+
+  <body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, modi!</p>
+    <button onclick="change()">click to change paragraph</button>
+
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    </script>
+
+    <button type="button" onclick="window.print()">print page</button>
+  </body>
 
 </html>
