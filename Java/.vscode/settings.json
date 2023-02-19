@@ -1,3 +1,7 @@
 {
-  "java.project.sourcePaths": ["project1/src"]
+  "java.project.sourcePaths": [
+    "project1/src",
+    "demo/src/main/java/hibernateconnection"
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic"
 }
