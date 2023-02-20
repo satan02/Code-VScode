@@ -1,0 +1,23 @@
+.container{
+  background-color: cadetblue;
+}
+
+.btn{
+  width: 400px;
+  height: 50px;
+  border: none;
+  background-color: aquamarine;
+  color: black;
+  font-size: larger;
+}
+.btn:hover{
+  background-color: darkcyan;
+}
+
+.disc{
+  color:black;
+}
+
+.block{
+  height: 500px;
+}
