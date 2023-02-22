@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
+  <script src="https://kit.fontawesome.com/19b6fbbd46.js" crossorigin="anonymous"></script>
   <style>
     body {
       box-sizing: border-box;
@@ -33,6 +34,7 @@
       align-items: center;
       justify-content: center;
       margin: 10px;
+      padding: 10px;
     }
 
     .link:hover {
@@ -42,6 +44,10 @@
     #contact {
       position: absolute;
       right: 0px;
+    }
+
+    p {
+      padding-left: 10px;
     }
 
     @media(max-width:450px) {
@@ -56,7 +62,9 @@
 
 <body>
   <nav>
-    <div class="link">Home</div>
+    <div class="link"><i class="fa-sharp fa-solid fa-house fa-1.5x"></i>
+      <p>Home</p>
+    </div>
     <div class="link">Projects</div>
     <div class="link">About</div>
     <div class="link" id="contact">Contact</div>

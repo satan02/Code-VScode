@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlay-Example</title>
+  <style>
+    .container {
+      position: absolute;
+      left: -100px;
+      font-size: large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .elements {
+
+
+      width: 200px;
+      height: 50px;
+      border: 1px transparent;
+      border-radius: 5px;
+      margin: 2px;
+    }
+
+    .elements:hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      transition: 0.6s ease-in-out;
+      color: black;
+      text-align: end;
+    }
+
+    #el1 {
+      background-color: red;
+      top: 50px;
+    }
+
+    #el2 {
+      background-color: yellow;
+      top: 100px;
+    }
+
+    #el3 {
+      background-color: green;
+      top: 150px;
+
+    }
+
+    #el4 {
+      background-color: blue;
+      top: 200px;
+
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; -->
+  <div class="container">
+    <div class="elements" id="el1">Home</div>
+    <div class="elements" id="el2">About</div>
+    <div class="elements" id="el3">Contact</div>
+    <div class="elements" id="el4">Projects</div>
+  </div>
+</body>
+
+</html>

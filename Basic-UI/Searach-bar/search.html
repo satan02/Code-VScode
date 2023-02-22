@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: darkgrey;
+      padding: 50px;
+    }
+
+    .links {
+      width: 400px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+    }
+
+    input {
+      height: 50px;
+      width: 400px;
+      border-radius: 5px;
+      padding: 10px 10px 10px 50px;
+    }
+
+    form {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .links:hover {
+      background-color: white;
+    }
+
+    #block2 {
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="block">
+      <h5 class="links">Menu</h5>
+      <form action="">
+        <input type="search" name="search" id="search" placeholder="Search" onkeyup="change()">
+      </form>
+      <h5 class="links">HTML</h5>
+      <h5 class="links">CSS</h5>
+      <h5 class="links">JAVASCRIPT</h5>
+      <h5 class="links">REACT</h5>
+      <h5 class="links">JAVA</h5>
+    </div>
+    <div class="block" id="block2">
+      <h1>Hello Search</h1>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis consectetur maiores alias atque quia
+        <br>
+        beatae voluptatem placeat molestiae neque laborum pariatur, excepturi labore. Consequuntur, culpa quae
+        voluptatum
+        aspernatur quia doloribus amet reiciendis, tempore aliquid laborum, beatae nesciunt sint asperiores molestiae
+        sit
+        <br>
+        sunt tempora? Aspernatur ipsam aliquid ab excepturi quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, in voluptatibus eligendi quaerat vel provident <br>
+        consequuntur consectetur beatae maxime! Quidem nobis voluptates at laudantium, architecto odit ducimus eveniet,
+        <br>
+        nemo excepturi adipisci quam, doloribus perferendis minus delectus culpa dolor amet. Repudiandae.
+      </h3>
+
+    </div>
+  </div>
+  <script>
+    function change() {
+      var input, filter, div, i, h;
+      input = document.getElementById("search");
+      filter = input.value.toUppercase();
+      h = document.getElementsByTagName("h5")
+      for (i = 0; i < h.length; i++) {
+        if (h.innerHTML.toUppercase().indexOf(filter) > -1) {
+          h[i].style.display = "";
+        } else {
+          h[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

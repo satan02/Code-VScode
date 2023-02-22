@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>side-navigation</title>
+  <script src="https://kit.fontawesome.com/19b6fbbd46.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      transition: 0.3s ease-in;
+    }
+
+    .block {
+      display: flex;
+    }
+
+    .container {
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      margin: 30px;
+    }
+
+    .btn {
+      width: 80px;
+      height: 80px;
+      border: none;
+    }
+
+    .sidenav {
+      box-sizing: border-box;
+      height: 800px;
+      background-color: black;
+      width: 0%;
+      padding-left: 0%;
+      transition: ease-out 1000ms;
+      z-index: 1;
+      box-shadow: gray red;
+    }
+
+    a {
+      display: block;
+      color: white;
+      height: 40px;
+      text-align: center;
+      text-decoration: none;
+      font-size: x-large;
+      height: 50px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block">
+    <div class="sidenav" id="sidebar">
+      <a href="#" class="links" onclick="closenav()" id="opennavbar"><i
+          class="fa-sharp fa-solid fa-xmark fa-1.5x"></i></a>
+      <a href="#" class="links">Menu</a>
+      <a href="#" class="links">contact</a>
+      <a href="#" class="links">about</a>
+      <a href="#" class="links">projects</a>
+    </div>
+    <div class="container">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi temporibus qui mollitia, id quos rerum fuga ex
+        consequatur. Blanditiis delectus voluptatum sint amet facere similique perferendis ex, voluptatem sapiente
+        minima!
+      </p>
+      <button class="btn" onclick="opennav()"><i class="fa-sharp fa-solid fa-bars fa-2x"></i></button>
+    </div>
+  </div>
+
+  <script>
+    function opennav() {
+      document.getElementById("sidebar").style.width = "15%";
+      document.getElementById("sidebar").style.padding = "5%";
+      document.body.style.backgroundColor = "gray";
+    }
+    function closenav() {
+      document.getElementById("sidebar").style.width = "0%";
+      document.getElementById("sidebar").style.padding = "0%";
+      document.body.style.backgroundColor = "white";
+
+    }
+  </script>
+</body>
+
+</html>

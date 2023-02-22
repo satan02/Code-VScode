@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responsive narbar</title>
+  <style>
+    .container {
+      display: flex;
+      position: absolute;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    nav {
+      background: gray;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      transition: 0.2s ease-in;
+
+
+    }
+
+    a {
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 10px;
+      text-decoration: none;
+      font-size: x-large;
+      font-weight: 500;
+    }
+
+    a:hover {
+      background: darkgray;
+    }
+
+    @media(max-width:1050px) {
+
+      nav {
+        width: 200px;
+      }
+    }
+
+    @media(max-width:750px) {
+      .container {
+        display: block;
+      }
+
+      nav {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      a {
+        font-size: large;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="block">
+      <nav class="sidenav">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Projects</a>
+        <a href="#" class="link">About</a>
+        <a href="#" class="link">Contact</a>
+      </nav>
+    </div>
+    <div class="block">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, at.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsa quisquam aliquam voluptatibus, totam et
+        nobis reprehenderit ex hic modi magnam quis, molestias delectus dolore nulla fuga enim optio dolores? Mollitia
+        numquam reprehenderit cum fugiat at nobis ipsum voluptates obcaecati.</p>
+    </div>
+  </div>
+</body>
+
+</html>
