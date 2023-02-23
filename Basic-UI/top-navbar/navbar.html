@@ -13,41 +13,53 @@
       margin: 0px;
       padding: 0px;
       background-color: rgb(114, 99, 99);
+      height: 2000px;
     }
 
     nav {
-      position: absolute;
+      position: relative;
       background-color: black;
       color: wheat;
       display: flex;
       /* grid-template-columns: 1fr 1fr 1fr 1fr; */
       width: 80%;
+      bottom: 0%;
       left: 10%;
-
-      /* padding-left: 300px; */
-      /* padding-right: 300px; */
     }
 
     .link {
       height: 50px;
+      width: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 10px;
       padding: 10px;
+      font-size: larger;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #home-center {
+      position: absolute;
+      font: optional;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .link:hover {
       background-color: grey;
-    }
-
-    #contact {
-      position: absolute;
-      right: 0px;
+      border-bottom: 3px solid white;
     }
 
     p {
       padding-left: 10px;
+    }
+
+    .left-nav {
+      display: flex;
+      position: absolute;
+      right: 0px;
+      flex-direction: row-reverse;
     }
 
     @media(max-width:450px) {
@@ -62,12 +74,17 @@
 
 <body>
   <nav>
-    <div class="link"><i class="fa-sharp fa-solid fa-house fa-1.5x"></i>
+    <div class="link" id="home-center"><i class="fa-sharp fa-solid fa-house fa-1.5x"></i>
       <p>Home</p>
     </div>
     <div class="link">Projects</div>
     <div class="link">About</div>
     <div class="link" id="contact">Contact</div>
+    <div class="left-nav">
+      <div class="link">About-left</div>
+      <div class="link" id="contact">Contact-left</div>
+    </div>
+
   </nav>
 
 </body>
