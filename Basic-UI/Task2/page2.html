@@ -34,6 +34,26 @@
     .link-hover:hover {
       background-color: white;
     }
+
+    .round-corners {
+      border-radius: 10px;
+    }
+
+    @media (max-width:525px) {
+      .rightside-nav {
+        display: none;
+      }
+
+      #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+
+      }
+
+      .filters {}
+    }
   </style>
 
 </head>
@@ -69,7 +89,7 @@
           </ul>
         </div>
 
-        <div class="">
+        <div class="rightside-nav">
           <ul class="nav justify-content-end mr-4 navbar-nav row-cols-sm-1 row-cols-md-2">
             <li class="nav-item m-2 nav-item col-lg-4">
               <select class="form-select border-0 text-black-50 font-weight-bold bg-black"
@@ -123,9 +143,9 @@
             <h3 class="">Inbox</h3>
           </div>
 
-          <div class="row container-fluid row-cols-md-2 row-cols-sm-2 mb-4">
+          <div class="row container-fluid row-cols-md-2 row-cols-sm-1 mb-4">
 
-            <div class="col col-lg-4">
+            <div class="col col-lg-5  filters">
               <div class="input-group mb-3 ">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -136,7 +156,7 @@
             </div>
 
 
-            <div class="col col-lg-2 container-fluid">
+            <div class="col col-lg-2 container-fluid filters">
               <div class="d-flex">
                 <span class="text-center">Show</span>
                 <select class="form-select border-0 text-black-50 " aria-label="Default select example">
@@ -147,32 +167,25 @@
               </div>
             </div>
 
-            <div class="dropdown col col-lg-2 container-fluid">
-              <button class="btn btn-primary dropdown-toggle bg-black" type="button" data-toggle="dropdown">Dropdown
-                Example
-                <span class="caret"></span></button>
+            <div class="dropdown col col-lg-1 container-fluid round-corners filters">
+              <button class="btn btn-primary dropdown-toggle bg-black" type="button" data-toggle="dropdown">
+                <span class="caret">Filter</span></button>
               <ul class="dropdown-menu">
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Bootstrap</a></li>
-                <li><a href="#">Angular</a></li>
-              </ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">None</a></li>
             </div>
 
-            <div class="col col-lg-2 container-fluid">
-              <button type="submit" class="border-0 bg-black">
-                <h6 class="text-center p-1 ">Export to Excel</h6>
-              </button>
+            <div class="col col-lg-2 container-fluid  filters">
+              <button class="border-0 bg-black p-2 " style="border-radius: 6px;"> <a href="#" target="_blank"
+                  rel="noopener noreferrer" class="p-2 text-white">Export to Excel</a></button>
             </div>
 
           </div>
 
           <div class="row container-fluid ml-5 mb-4">
 
-            <div class="col-5 d-flex">
+            <div class="col-5 d-flex mr-3 col-md-4 col-sm-3">
               <div class="form-check col ">
                 <input class="form-check-input fa-2x" type="checkbox" value="" id="flexCheckDefault">
                 <div>Subject</div>
@@ -185,18 +198,57 @@
 
           </div>
 
-          <div class="container-fluid ml-5">
-            <div class="col-5 d-flex">
-              <div class="form-check col ">
+          <div class="container-fluid row bg-white p-4 mb-4 round-corners ">
+            <div class="col-5 d-flex mr-5 pl-5 col-md-4 col-sm-3">
+              <div class="form-check col">
                 <input class="form-check-input fa-2x" type="checkbox" value="" id="flexCheckDefault">
                 <div>
-                  <h4 class="">Signing Contract between SignGateWay and DOE-Industeries</h4>
-                  <p class="">From : SignGateWay</p>
+                  <h class="" style="font-size: 1.5;">Signing Contract between SignGateWay and DOE-Industeries</h6>
+                    <p class="">From : SignGateWay</p>
                 </div>
+              </div>
+            </div>
+
+            <div class="col">Pending</div>
+
+            <div class="col">15-12-2021 | 5:20 PM</div>
+
+            <div class="col">
+              <div class="container-fluid">
+                <select class="form-select border-0 text-black-50 col-6" aria-label="Default select example">
+                  <option selected>History | </option>
+                  <option value="1">10-20</option>
+                  <option value="2">50-100</option>
+                </select>
               </div>
             </div>
           </div>
 
+          <div class="container-fluid row bg-white p-4 round-corners">
+            <div class="col-5 d-flex mr-5 pl-5 col-md-4 col-sm-3">
+              <div class="form-check col">
+                <input class="form-check-input fa-2x" type="checkbox" value="" id="flexCheckDefault">
+                <div>
+                  <h class="" style="font-size: 1.5;">Signing Contract between SignGateWay and DOE-Industeries</h6>
+                    <p class="">From : SignGateWay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">Pending</div>
+
+            <div class="col">15-12-2021 | 5:20 PM</div>
+
+            <div class="col">
+              <div class="container-fluid">
+                <select class="form-select border-0 text-black-50 col-6" aria-label="Default select example">
+                  <option selected>History | </option>
+                  <option value="1">10-20</option>
+                  <option value="2">50-100</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
 
         </div>

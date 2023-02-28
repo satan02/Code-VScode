@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component-page2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    :root {
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-primary: #0d6efd;
+      --bs-secondary: #6c757d;
+      --bs-success: #198754;
+      --bs-info: #0dcaf0;
+      --bs-warning: #ffc107;
+      --bs-danger: #dc3545;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;
+      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    }
+
+    body {
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+    }
+
+    .section1 {
+      color: var(--bs-blue);
+    }
+
+    .parent-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .box {
+      background-color: #343a40;
+      height: 100px;
+      border: 1px solid;
+    }
+
+    .box1 {
+      height: 100px;
+      border: 1px solid;
+      background-image: linear-gradient(to right, rgb(173, 211, 185), rgb(58, 206, 58));
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container section1 h1">Hello</div>
+  <div class="container parent-box ">
+    <div class="box box1 col"></div>
+    <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit!</div> -->
+    <div class="box col"></div>
+    <div class="box col"></div>
+    <div class="box col"></div>
+    <div class="box col"></div>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-sm-2 row-cols-md-4">
+      <div class="col box m-2">Column</div>
+      <div class="col box m-2">Column</div>
+      <div class="col box m-2">Column</div>
+      <div class="col box m-2">Column</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-3 box m-2">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3 box m-2">.col-6 .col-sm-3</div>
+
+      <!-- Force next columns to break to new line -->
+      <div class="w-100"></div>
+
+      <div class="col-6 col-sm-3 box m-2">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3 box m-2">.col-6 .col-sm-3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col box m-2 bg-danger order-1 ">
+        First in DOM, no order applied
+      </div>
+      <div class="col box m-2 bg-danger order-0">
+        Second in DOM, with a larger order
+      </div>
+      <div class="col box m-2 bg-danger order-5">
+        Third in DOM, with an order of 1
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container ">
+    <div class="row">
+      <div class="box m-2 bg-info col-3  "></div>
+      <div class="box m-2 bg-info col-2  "></div>
+      <div class="box m-2 bg-info col-2  col-sm-6 offset-lg-2"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-5 col-md-6 box m-2">.col-sm-5 .col-md-6</div>
+      <div class="col-6 col-sm-5 offset-sm-2 col-md-6 offset-md-0 box m-2">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 col-sm-6 col-md-5 col-lg-6 box m-2">.col-sm-6 .col-md-5 .col-lg-6</div>
+      <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 box m-2">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6
+        .offset-lg-0</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 box m-2 bg-dark text-light">.col-md-4</div>
+      <div class="col-md-4 box m-2 bg-dark text-light ms-auto">.col-md-4 .ms-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 box m-2 bg-dark text-light ms-md-auto">.col-md-3 .ms-md-auto</div>
+      <div class="col-md-3 box m-2 bg-dark text-light ms-md-auto">.col-md-3 .ms-md-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-auto box m-2 bg-dark text-light me-auto">.col-auto .me-auto</div>
+      <div class="col-auto box m-2 bg-dark text-light">.col-auto</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row g-2">
+      <div class="col-6">
+        <div class="p-3 border box1">
+          Custom
+          column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border box1">Custom
+          column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border box1">Custom
+          column padding</div>
+      </div>
+      <div class="col-6 z-index-3">
+        <div class="p-3 border box1">Custom
+          column padding</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div style="background-image: linear-gradient(to right,blue,green
+    ); width: 100%; height: 100px;"></div>
+  </div>
+
+  <div class="container">
+    <h1 class="h1 display-1 ">here display will override h1 class</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <h1 class="display-6">Display 6</h1>
+  </div>
+
+  <div class="container">
+    <p class="lead">
+      This is a lead paragraph. It stands out from regular paragraphs.
+    </p>
+
+
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+    <p><u>This line of text will render as underlined.</u></p>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+  </div>
+
+  <div class="container">
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+    </blockquote>
+  </div>
+
+  <div class="container">
+    <figure>
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+    <figure class="text-end">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="container">
+    <ul class="list-unstyled">
+      <li>This is a list.</li>
+      <li>It appears completely unstyled.</li>
+      <li>Structurally, it's still a list.</li>
+      <li>However, this style only applies to immediate child elements.</li>
+      <li>Nested lists:
+        <ul>
+          <li>are unaffected by this style</li>
+          <li>will still show a bullet</li>
+          <li>and have appropriate left margin</li>
+        </ul>
+      </li>
+      <li>This may still come in handy in some situations.</li>
+    </ul>
+
+  </div>
+
+  <div class="container">
+    <ul class="list-inline">
+      <li class="list-inline-item">This is a list item.</li>
+      <li class="list-inline-item">And another one.</li>
+      <li class="list-inline-item">But they're displayed inline.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <dl class="row">
+      <dt class="col-sm-3">Description lists</dt>
+      <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+      <dt class="col-sm-3">Term</dt>
+      <dd class="col-sm-9">
+        <p>Definition for the term.</p>
+        <p>And some more placeholder definition text.</p>
+      </dd>
+
+      <dt class="col-sm-3">Another term</dt>
+      <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+      <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+      <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+      <dt class="col-sm-3">Nesting</dt>
+      <dd class="col-sm-9">
+        <dl class="row">
+          <dt class="col-sm-4">Nested definition list</dt>
+          <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition
+            list.</dd>
+        </dl>
+      </dd>
+    </dl>
+  </div>
+
+  <div class="cotainer">
+    <picture>
+      <source srcset="..." type="image/svg+xml">
+      <img src="..." class="img-fluid img-thumbnail" alt="...">
+    </picture>
+
+  </div>
+
+  <div class="container">
+    <table class="table table caption-top">
+      <caption>List of users</caption>
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <figure class="figure">
+      <img src="./carlos-muza-hpjSkU2UYSU-unsplash.jpg" class="figure-img img-fluid rounded col-6" alt="...">
+      <figcaption class="figure-caption">A caption for the above image.</figcaption>
+    </figure>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
