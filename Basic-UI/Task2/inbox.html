@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbox-SignGateWay</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/19b6fbbd46.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --light-gray: rgb(220, 220, 220);
+      --silver: rgb(192, 192, 192);
+      --slate-gray: rgb(119, 136, 153);
+      --smoke: rgb(245, 245, 245);
+      --black: rgb(0, 0, 0);
+      --white: rgb(255, 255, 255);
+    }
+
+
+    .box {
+      height: 100vh auto;
+      background-color: var(--silver);
+    }
+
+    .box2 {
+      height: 100vh;
+    }
+
+    .sidebar {
+      background-color: var(--silver);
+      padding: 15px;
+    }
+
+    .sidebar:active {
+      border-left: 2px solid black;
+    }
+
+    .navlink:active {
+      background-color: white;
+      border-bottom: 2px solid black;
+    }
+
+    .sidenar-links {
+      text-decoration: none;
+      height: 50px;
+      color: black;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .sidenar-links:active {
+      border-left: 2px solid black;
+      background-color: white;
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 576px) {}
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (max-width: 625px) {
+      .sidebar-nav {
+        height: auto;
+        width: 100%;
+      }
+
+
+
+      .box2 {
+        height: auto;
+      }
+    }
+
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      .contents {}
+    }
+
+    /* // X-Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
+
+    /* /* // XX-Large devices (larger desktops, 1400px and up) */
+    @media (min-width: 1400px) {}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- navigatin -->
+
+  <div class="container-fluid m-3">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand h1 m-2" href="#"><span class="text-black-50">Sign</span><span class="">GateWay</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid">
+            <li class="nav-item m-2">
+              <a class="nav-link  navlink" aria-current="page" href="#">DashBoard</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link active border-bottom navlink" href="#">Sign & WorkFlow</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link navlink" href="#">Templates</a>
+            </li>
+          </ul>
+
+          <!-- right navigation -->
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end container-fluid">
+
+            <li class="nav-item m-2">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle bg-dark" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Sign Document
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item m-2">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle bg-light text-black-50 border-0" href="#" role="button"
+                  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Hindi</a></li>
+                  <li><a class="dropdown-item" href="#">Marathi</a></li>
+                  <li><a class="dropdown-item" href="#">Kannada</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#">Templates</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#"
+                style="width: 40px; height: 40px; border-radius: 50%; background-color: silver;"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+  <!-- Main-section -->
+
+  <div class="container-fluid box row ">
+
+    <!-- Sidebar -->
+
+    <div class="col-2 box2 border-end pt-5 sidebar-nav">
+
+      <div class="container-fluid ">
+
+        <div class="link"><a href="#" class="sidenar-links d-flex justify-content-center align-items-center">Inbox</a>
+        </div>
+        <div class="link "><a href="#" class="sidenar-links d-flex justify-content-center align-items-center">Sent</a>
+        </div>
+        <div class="link"><a href="#" class="sidenar-links d-flex justify-content-center align-items-center">Draft</a>
+        </div>
+        <div class="link"><a href="#" class="sidenar-links d-flex justify-content-center align-items-center">Trash</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+
+    <!-- Right-section -->
+    <div class="col box-2 p-5 ">
+
+      <div class="h3 mb-4">Inbox</div>
+
+      <div class="container-fluid row ">
+
+        <div class="  col  row-cols-md-1 d-flex align-self-center">
+          <div class="input-group container-fluid " style="height: 40px;">
+
+            <span class="input-group-text " id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control x" placeholder="Search" aria-label="Search"
+              aria-describedby="addon-wrapping">
+          </div>
+
+        </div>
+
+        <div class="col row-cols-md-1   ">
+          <div class="d-flex justify-content-end">
+            <div class="d-flex m-3">
+              <span class="d-flex align-items-center">Show</span>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle bg-light text-black-50 border-0" href="#" role="button"
+                  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">10</a></li>
+                  <li><a class="dropdown-item" href="#">10-50</a></li>
+                  <li><a class="dropdown-item" href="#">50-100</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="m-3">
+              <button type="button" class="btn btn-outline-secondary">Filter</button>
+            </div>
+
+            <div class="m-3">
+              <a href="#" class="btn " role="button" data-bs-toggle="button"
+                style="background-color: var(--light-gray);">Export to Excel</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid mt-4 mb-3 w-auto">
+        <div class="row p-2 ">
+
+          <div class="col-6">
+
+            <div class="form-check ">
+              <div> <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault"></div>
+
+              <div class=" col text-center contents">Subject</div>
+            </div>
+
+
+
+          </div>
+
+          <div class="col d-flex justify-content-center align-items-center contents">Status
+          </div>
+          <div class="col d-flex justify-content-center align-items-center contents">
+            Last-Modified
+          </div>
+          <div class="col d-flex justify-content-center align-items-center contents">Actions
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class=" container-fluid d-flex justify-content-end">
+        <span class="text-black-50">
+          1-2 of 2
+        </span>
+        <span><a href="#"><i class="fa-solid fa-less-than mx-2" style="color: rgb(56, 52, 52);"></i></a></span>
+        <span><a href="#"><i class="fa-solid fa-greater-than mx-2" style="color: rgb(56, 52, 52)"></i></a></span>
+      </div>
+
+      <div class="container-fluid mt-4 mb-4 bg-light rounded">
+
+        <div class="row mb-4">
+
+          <div class="col-6 d-flex py-3 px-4">
+            <div class="form-check col ">
+              <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+              <div class=" d-flex justify-content-center text-center " style="font-size: 0.9rem;">Signing Contract
+                between SignGateWay and DOE-Industeries</div>
+              <div class="p d-flex justify-content-center text-center">From : SignGateWay</div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center align-items-center" style="font-size: 0.9rem;">Pending</div>
+          <div class="col d-flex justify-content-center align-items-center" style="font-size: 0.9rem;">15-12-2021 | 5:20
+            PM
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="col">
+              <div class="container-fluid d-flex justify-content-center align-items-center" ju>
+                <select class="form-select border-0 text-black-50 w-auto " aria-label="Default select example">
+                  <option selected>History|</option>
+                  <option value="1">10-20</option>
+                  <option value="2">50-100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-4 mb-4 bg-light rounded">
+
+        <div class="row mb-4">
+
+          <div class="col-6 d-flex py-3 px-4">
+            <div class="form-check col ">
+              <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+              <div class=" d-flex justify-content-center text-center " style="font-size: 0.9rem;">Signing Contract
+                between SignGateWay and DOE-Industeries</div>
+              <div class="p d-flex justify-content-center text-center">From : SignGateWay</div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center align-items-center" style="font-size: 0.9rem;">Pending</div>
+          <div class="col d-flex justify-content-center align-items-center" style="font-size: 0.9rem;">15-12-2021 | 5:20
+            PM
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="col">
+              <div class="container-fluid d-flex justify-content-center align-items-center" ju>
+                <select class="form-select border-0 text-black-50 w-auto " aria-label="Default select example">
+                  <option selected>History|</option>
+                  <option value="1">10-20</option>
+                  <option value="2">50-100</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" container-fluid d-flex justify-content-end">
+        <span class="text-black-50">
+          1-2 of 2
+        </span>
+        <span><a href="#"><i class="fa-solid fa-less-than mx-2" style="color: black;"></i></a></span>
+        <span><a href="#"><i class="fa-solid fa-greater-than mx-2" style="color: black;"></i></a></span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
