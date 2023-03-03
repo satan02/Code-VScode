@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    :root {
+      --light-gray: rgb(220, 220, 220);
+      --silver: rgb(192, 192, 192);
+      --slate-gray: rgb(119, 136, 153);
+      --smoke: rgb(245, 245, 245);
+      --black: rgb(0, 0, 0);
+      --white: rgb(255, 255, 255);
+    }
+
+    body {
+      background-color: silver;
+    }
+
+
+    .box {
+      height: 100vh auto;
+    }
+
+    .box2 {
+      height: 100vh;
+    }
+
+    .navlink:active {
+      background-color: white;
+      border-bottom: 2px solid black;
+    }
+
+    @media (max-width:768px) {
+      .left-container {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+
+    @media(max-width:576px) {
+      .main-container .middle-container {
+        width: 100%;
+      }
+    }
+
+    @media(max-width:450px) {
+      #footer {
+        flex-direction: column;
+      }
+    }
+
+    @media(max-width:300px) {
+      .middle-container-div {
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 justify-content-center navigation">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#" style="font-size: x-large;">
+          <span class="text-black-50">Sign</span>GateWay
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid">
+            <li class="nav-item m-2">
+              <a class="nav-link  navlink" aria-current="page" href="#">DashBoard</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link navlink" href="#">Sign &
+                WorkFlow</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link navlink" href="#">Templates</a>
+            </li>
+          </ul>
+
+          <!-- right navigation -->
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end container-fluid">
+
+            <li class="nav-item m-2">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle bg-dark" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Sign Document
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item m-2">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle bg-light text-black-50 border-0" href="#" role="button"
+                  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Hindi</a></li>
+                  <li><a class="dropdown-item" href="#">Marathi</a></li>
+                  <li><a class="dropdown-item" href="#">Kannada</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item m-2 d-flex align-items-center mx-3">
+              <a class="nav-link " href="#" style="width: 30px; height: 30px; background-color: var(--silver);"></a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#"
+                style="width: 40px; height: 40px; border-radius: 50%; background-color: rgb(121, 121, 121);"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <div class="container-fluid d-flex flex-wrap gx-2 row " style="height: 75vh auto ; ">
+
+      <!-- left-container -->
+      <div class=" rounded position-relative col-2 row-cols-1  col-sm-4 col-md-4 col-lg-2 left-container"
+        style="background-color: var(--light-gray);">
+
+        <div class="h5 bg-light px-4 py-3 mb-4 rounded " style="width: 100%;">Documents</div>
+
+        <div class="d-flex flex-wrap container-fluid justify-content-center">
+
+          <div class="rounded mx-3 rounded mb-4 position-relative" style="background-color: rgb(184, 184, 184);">
+
+            <div class="d-flex justify-content-center mx-4 my-3"><a href="#"><img class="card-img-top"
+                  src="./agreement.png" alt="Card image cap"
+                  style="background-color: var(--light-gray); width: 80px; "></a>
+            </div>
+
+            <div class="bg-light "><a href="#" style="text-decoration: none;">
+                <p style="font-size: 0.7rem ;font-weight: bold; text-align: center; " class="mb-1  pt-2 text-dark">
+                  Demo
+                </p>
+                <p style="font-size: 0.7rem ;font-weight: bold; text-align: center; " class="mb-0 text-black-50">
+                  <span>1</span> page
+                </p>
+              </a>
+
+            </div>
+
+            <a href="" class="btn btn-sm position-absolute translate-middle"
+              style="background-color: rgb(88, 88, 88); top: 8%; left: 90%; border: 0; border-radius: 50%;width: 20px;height: 20px;">
+              <i class="fa-sharp fa-solid fa-xmark d-flex justify-content-center align-items-center"
+                style="color: white;">
+              </i>
+            </a>
+
+          </div>
+
+          <div class="rounded mx-3 rounded mb-4 position-relative" style="background-color: rgb(184, 184, 184);">
+
+            <div class="d-flex justify-content-center mx-4 my-3"><a href="#"><img class="card-img-top"
+                  src="./agreement.png" alt="Card image cap"
+                  style="background-color: var(--light-gray); width: 80px; "></a>
+            </div>
+
+            <div class="bg-light "><a href="#" style="text-decoration: none;">
+                <p style="font-size: 0.7rem ;font-weight: bold; text-align: center; " class="mb-1  pt-2 text-dark">
+                  Invoice-001
+                </p>
+                <p style="font-size: 0.7rem ;font-weight: bold; text-align: center; " class="mb-0 text-black-50">
+                  <span>1</span> page
+                </p>
+              </a>
+
+            </div>
+
+            <a href="" class="btn btn-sm position-absolute translate-middle"
+              style="background-color: rgb(88, 88, 88); top: 8%; left: 90%; border: 0; border-radius: 50%;width: 20px;height: 20px;">
+              <i class="fa-sharp fa-solid fa-xmark d-flex justify-content-center align-items-center"
+                style="color: white;">
+              </i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="  btn btn-dark rounded " data-bs-toggle="modal" data-bs-target="#exampleModal"
+          style="bottom: 0px; position: absolute; width:100%;">
+          <span class="" style="font-weight: bold;">Upload New Document</span>
+
+          <!-- Modal -->
+          <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Select File</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- middle-container -->
+      <div
+        class="middle-container rounded mx-2 col position-relative h-100 justify-content-center align-items-center row-cols-auto row-cols-sm-auto row-cols-md-auto"
+        style="z-index: 0;">
+
+        <div class="d-flex bg-light rounded px-4 justify-content-between align-content-center">
+
+          <div class="px-2  d-flex justify-content-center align-items-center">
+            <a href="#" class="text-black-50 text-decoration-none px-2"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#" class="text-black-50  px-4 text-decoration-none d-flex align-self-center"
+              style="font-size: 0.9rem;">Demo.pdf</a>
+            <a href="#" class="text-black-50 text-decoration-none px-2"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+
+          <nav class="px-2  navbar navbar-expand-lg navbar-light  align-items-center">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav" style="height:40px;">
+              <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+                <li class="nav-item">
+                  <a href="#" class="text-black-50 text-decoration-none  mx-2"><i class="fa-solid fa-minus"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="text-black-50 text-decoration-none mx-2 ">
+                    <input type="text" class="form-control text-black-50 " placeholder="100%" aria-label="Percentage"
+                      aria-describedby="basic-addon1" style="width: 100px;">
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="text-black-50   mx-2"><i class="fa-solid fa-plus"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="text-black-50   mx-2" style="font-size: 0.9rem;">
+                    <i class="fa-solid fa-a p-1 rounded"
+                      style="color: white; background-color: rgb(114, 114, 114);"></i>
+                    <span class="text-wrap">Add Watermark</span> </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="text-black-50   mx-2" style="font-size: 0.9rem;">
+                    <i class="fas fa-lock"></i>
+                    <span class="text-wrap">Add Password</span> </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="text-black-50   mx-2" style="font-size: 0.9rem;">
+                    <i class="fas fa-paperclip"></i>
+                    <span class="text-wrap"> Attach Supporting Document</span></a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="text-black-50   mx-2" style="font-size: 0.9rem;">
+                    <i class="fas fa-plus-square"></i>
+                    <span class="text-wrap">Merge</span> </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="text-black-50  mx-2" style="font-size: 0.9rem;">
+                    <i class="fas fa-trash "></i>
+                    <span class="text-wrap">Delete</span> </a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+
+        <div class="px-2  container rounded  d-flex justify-content-center middle-container-div"
+          style="background-color: rgb(128, 125, 124);overflow: hidden;">
+          <img src="./document.jpeg" alt="document" srcset="" class=" py-2 m-3" style="height: 65vh; overflow: hidden;">
+        </div>
+
+      </div>
+
+      <!-- right-container -->
+      <div class="rounded mx-2  justify-content-center align-items-center rounded col-2 right-container row-cols-1"
+        style="background-color: rgb(192, 192, 192);">
+
+        <div class="bg-light container-fluid p-3 mb-4">
+
+          <div class="h6 mb-4">Form fields</div>
+          <div class="h6 mb-3" style="font-size: 0.8rem;">ASSIGN FIELD FOR</div>
+
+          <div class="d-flex justify-content-centre overflow-hidden form-select border-0" style="font-size: 0.8rem;">
+
+            <div class="mx-1" style="width: 40px;height: 40px; border-radius: 50%; background-color: darkgrey;"></div>
+            <div class="text-start ">
+              <div class="h6 text-wrap" style="font-size: 0.8rem;">Jhon Doe</div>
+              <div class="text-muted text-wrap" style="font-size: 0.8rem;">jhon@doeenterprice.com</div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="container-fluid mx-3 mb-4">
+          <div style="font-size: 0.8rem;" class="h6 ">STANDARD FIELDS</div>
+          <div style="" class=" text-muted"><span>Signature</span></div>
+          <div style="" class=" text-muted"><span>Date</span></div>
+        </div>
+
+        <div class="container-fluid mx-3 mb-4">
+          <div style="font-size: 0.8rem;" class="h6 ">STANDARD FIELDS</div>
+          <div style="" class=" text-muted"><span>Home</span></div>
+          <div style="" class=" text-muted"><span>Email</span></div>
+          <div style="" class=" text-muted"><span>Phone Number</span></div>
+          <div style="" class=" text-muted"><span>Identification Number</span></div>
+          <div style="" class=" text-muted"><span>Organisation</span></div>
+          <div style="" class=" text-muted"><span>Designation</span></div>
+        </div>
+
+        <div class="container-fluid mx-3">
+          <div style="font-size: 0.8rem;" class="h6 ">ADVANCED FIELDS</div>
+          <div style="" class=" text-muted"><span>Text</span></div>
+          <div style="" class=" text-muted"><span>Checkbox</span></div>
+          <div style="" class=" text-muted"><span>Radio Button</span></div>
+          <div style="" class=" text-muted"><span>Dropdown</span></div>
+          <div style="" class=" text-muted"><span>QRcode</span></div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+  <div class=" ">
+
+    <div
+      class=" bg-light d-flex justify-content-between align-items-center px-4 container-fluid flex-wrap h-auto py-3  "
+      style="">
+      <button class="btn align-items-center" style="background-color: rgb(167, 167, 167);">Back</button>
+      <div class="d-flex " id="footer">
+        <div class="btn row-cols-1"><button class="btn" style="background-color: rgb(167, 167, 167);">Save as
+            Draft</button></div>
+        <div class="btn row-cols-1"><button class="btn" style="background-color: rgb(167, 167, 167);">Discard</button>
+        </div>
+        <div class="btn row-cols-1"><button class="btn btn-dark">Next</button></div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <script src="https://kit.fontawesome.com/19b6fbbd46.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
